@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to <br/>To-Do-List</h1>
+
+        <button id="addTodoButton">Add To-Do</button>
+
+        <!-- Form to add/edit todo -->
+        <div id="todoForm" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <input type="text" id="todoInput" placeholder="Enter a new Task">
+                <button id="saveTodoButton">Save</button>
+            </div>
+        </div>
+
+        <ul id="todoList" class="todo-list"></ul>
+
+        <p id="emptyState">There are no tasks yet, <br/>please add by pressing the button above.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
